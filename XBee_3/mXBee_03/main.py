@@ -125,7 +125,7 @@ def main():
             print(luz, 'lx\n')
             if L4.value() == 1:
                 remoto(temp, luz)       # verificar si hay solicitud de informacion
-            sleep(2)                                    # lazo de dos segundos entre mediciones
+            sleep(0.5)                                    # lazo de dos segundos entre mediciones
 
     except KeyboardInterrupt:
         print('Apagando LEDS')
