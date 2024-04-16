@@ -100,11 +100,11 @@ def recibir(topic,payload):
         else:                   # si el botón está en OFF
             comp.on()           # apagar el LED luz
 
-    if topic == b"/v1.6/devices/esp32/alarma_of_1/lv": # compresor A/C
+    if topic == b"/v1.6/devices/esp32/alarma_of_1/lv": # alarma iluminacion
         if payload == b'1.0':   # si el botón está en ON
-            alar.off()          # prender el LED luz
+            alar.off()          # prender el LED alarma
         else:                   # si el botón está en OFF
-            alar.on()           # apagar el LED luz
+            alar.on()           # apagar el LED alarma
             
 # funciones para enviar señales sensadas a UBIDOTS 
 def env_temp1(var1):
