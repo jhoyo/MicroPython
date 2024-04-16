@@ -41,13 +41,13 @@ password = ''
 
 # buscar los Puntos de Acceso para los que se tienen credenciales
 for i in range(len(lista)):
-  if lista[i][0] == b'tecnm_hillo':
-    ssid = 'tecnm_hillo'
+  if lista[i][0] == b'LAB_IoT':
+    ssid = '12345678'
     password = ''
     i = len(lista)-1
-  if lista[i][0] == b'CasaHM':
-    ssid = 'CasaHM'
-    password = 'PepeyLety1995'
+  if lista[i][0] == b'reemplazar con su SSID':
+    ssid = 'reemplazar con su SSID'
+    password = 'reemplazar con su password'
     i = len(lista)-1
 
 # funciones para conexion Wi-Fi
@@ -133,8 +133,8 @@ def env_temp2(var1):
     publicar(topic,payload)
        
 # Configuración Ubidots
-Token    = "BBUS-yRbtgS4Jfu7rGHVdM5h4BcSYUlJEy2"
-clientID = "660d958bd7511206e9773c8b"
+Token    = "reemplazar con su token"
+clientID = "reemplazar con su ID"
 URL      = "industrial.api.ubidots.com"
 topic    = b'/v1.6/devices/ESP32'
 
