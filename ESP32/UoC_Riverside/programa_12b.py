@@ -27,9 +27,9 @@ for i in range(len(lista)):
     ssid = 'tecnm_hillo'
     password = ''
     i = len(lista)-1
-  if lista[i][0] == b'CasaHM':
-    ssid = 'CasaHM'
-    password = 'PepeyLety1995'
+  if lista[i][0] == b'Lab_IoT':
+    ssid = 'Lab_IoT'
+    password = '12345678'
     i = len(lista)-1
   
 def do_connect(ssid,pwd):
