@@ -21,8 +21,8 @@ esp.osdebug(None)
 import gc               			# colector de basura 
 gc.collect()  
 
-ssid = 'REPLACE_WITH_YOUR_SSID' 
-password = 'REPLACE_WITH_YOUR_PASSWORD'  
+ssid = 'Lab_IoT' 
+password = '12345678'  
 
 station = network.WLAN(network.STA_IF) 		# configurar ESP32 como estacion Wi-Fi  
 
