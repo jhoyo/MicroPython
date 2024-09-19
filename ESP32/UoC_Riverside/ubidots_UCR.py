@@ -27,7 +27,7 @@ comp.on()
 alar.on()
 
 i2c = I2C(0,scl=Pin(22), sda=Pin(21))
-bmp = BME680_I2C(i2c=i2c)
+bmp = BMP28(i2c)
 ltr = BH1750(i2c)
 ds1 = DS18X20(OneWire(Pin(4)))
 rds = ds1.scan()
