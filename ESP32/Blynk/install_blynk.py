@@ -2,10 +2,10 @@ import urequests
 import mip
 
 from time import time, sleep
-from network import WLAN
+from network import WLAN, STA_IF
 
 def conectar_wifi(ssid, password, timeout=10):
-    wlan = WLAN(network.STA_IF)
+    wlan = WLAN(STA_IF)
     wlan.active(True)
     
     if not wlan.isconnected():
@@ -61,11 +61,3 @@ else:
     print("Error al descargar. Código:", res.status_code)
 
 res.close()
-#Usa el código con precaución.
-
-#Cómo verificar que se grabó:
-#Una vez que termine, puedes confirmar que el archivo existe y ver su tamaño con estos comandos en el REPL:
-#python
-import os
-os.listdir()  # Debería aparecer 'ISRG_Root_X1.der' en la lista
-print(os.stat("ISRG_Root_X1.der")[6], "bytes") # Verifica el tamaño
