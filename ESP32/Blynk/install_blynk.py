@@ -4,6 +4,7 @@ import mip
 from time import time, sleep
 from network import WLAN, STA_IF
 
+# Conectar ESP32 a Wi-Fi
 def conectar_wifi(ssid, password, timeout=10):
     wlan = WLAN(STA_IF)
     wlan.active(True)
@@ -25,10 +26,10 @@ def conectar_wifi(ssid, password, timeout=10):
     print("Configuración de red:", wlan.ifconfig())
     return True
 
-# Uso:
-
-conectar_wifi("tecnm_hillo", "")
-
+# claves de acceso a Wi-Fi
+SSID = "nombre del SSID"
+PASS = "contraseña del SSID"
+conectar_wifi(SSID, PASS)
 
 # Instalar libreria MQTT de Blynk
 print("Instalar libreria blynk_mqtt.py")
@@ -43,14 +44,13 @@ mip.install(base+"config.py",target = "/")
 print("Instalar archivo demo.py")
 mip.install(base+"demo.py",target = "/")
 
-
+# Instalar el archivo binario de acceso SSL
 # 1. Definir la URL Raw (directa) del certificado
 url = "https://raw.githubusercontent.com/jhoyo/MicroPython/main/ESP32/Blynk/ISRG_Root_X1.der"
 
 # 2. Hacer la petición
 print("Descargando...")
 res = urequests.get(url)
-print("salida")
 
 if res.status_code == 200:
     # 3. Escribir el archivo en la raíz en modo binario (wb)
