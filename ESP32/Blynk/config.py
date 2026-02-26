@@ -1,15 +1,12 @@
 
 # WiFi credentials. Set password to "" for open networks.
-#WIFI_SSID = "CasaHM"
-#WIFI_PASS = "PepeyLety1995"
-
-WIFI_SSID = "JAHM"
-WIFI_PASS ="Bartolo123" 
+WIFI_SSID = "su SSID"
+WIFI_PASS ="su Contraseña" 
 
 # Fill in information from Blynk Device Info here.
-BLYNK_TEMPLATE_ID = "TMPL2g-nHkpzG"
-BLYNK_TEMPLATE_NAME = "Prueba LED"
-BLYNK_AUTH_TOKEN = "NWJYh0tZDYroGzDNInC2ZeI7dcgawuYp"
+BLYNK_TEMPLATE_ID = "Su Template ID"
+BLYNK_TEMPLATE_NAME = "Su Nombre de Plantilla"
+BLYNK_AUTH_TOKEN = "su Token de Autorizacion"
 
 # Change the default Blynk server. Applicable for users with a white label plan.
 BLYNK_MQTT_BROKER   = "blynk.cloud"
